@@ -2,21 +2,21 @@
 
 /**
  * print_number - prints an integer
- * @n: randum integer
- * Return: void
- * */
+ * @n: random integer
+ *Return: void
+ **/
 
 void print_number(int n)
 {
-	cahr ld, cr;
+	char ld, cr;
 	int r;
 	int ct = 0;
 
 	if (n < 0)
 	{
-		_putchar('_');
+		_putchar ('-');
 		ld = (char)('0' - (n % 10));
-		n = n / - 10;
+		n = n / -10;
 	}
 	else
 	{
@@ -25,12 +25,13 @@ void print_number(int n)
 	}
 
 	r = 0;
-	while(n > 0)
+	while (n > 0)
 	{
 		r = r * 10 + (n % 10);
 		n = n / 10;
-		ct ++;
+		ct++;
 	}
+
 	while (r > 0)
 	{
 		cr = (char)((r % 10) + '0');
@@ -43,5 +44,6 @@ void print_number(int n)
 		_putchar('0');
 		ct--;
 	}
-	_pputchar(ld);
+	_putchar(ld);
 }
+

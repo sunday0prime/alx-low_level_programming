@@ -8,31 +8,27 @@
 
 int main(void)
 {
-int num = 1;
+	int h = 1;
 
-while (num++ < 100)
-{
-if ((num % 3 == 0) && (num % 5 == 0))
-{
-printf("fizzBuzz");
+	while (h <= 100)
+	{
+		if (h % 3 == 0 && h % 5 == 0)
+			printf("FizzBuzz ");
+		else if (h % 5 == 0)
+		{
+			if (h == 100)
+			{
+				printf("Buzz");
+				print("\n");
+			}
+			else
+				printf("Buzz ");
+		}
+		else if (h % 3 == 0)
+			printf("Fizz ");
+		else
+			printf("%d ", h);
+		h++;
+	}
+	return (0);
 }
-else if ((num % 3) == 0)
-{
-printf("fizz");
-}
-else if ((num % 5) == 0)
-{
-if (num != 100)
-{
-printf("Buzz");
-}
-else
-{
-printf("Buzz");
-}
-}
-num++;
-}
-return (0);
-}
-

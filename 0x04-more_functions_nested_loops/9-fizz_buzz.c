@@ -1,11 +1,8 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
-* main - program that prints either number, fizz, buzz or fizzbuzz
-* Return: returns 0
-*/
-
+ * main - function that checks for uppercase character.
+ * Return: 0
+ */
 int main(void)
 {
 	int h = 1;
@@ -19,7 +16,7 @@ int main(void)
 			if (h == 100)
 			{
 				printf("Buzz");
-				print("\n");
+				printf("\n");
 			}
 			else
 				printf("Buzz ");
@@ -28,7 +25,8 @@ int main(void)
 			printf("Fizz ");
 		else
 			printf("%d ", h);
-		h++;
+	h++;
 	}
-	return (0);
+return (0);
 }
+

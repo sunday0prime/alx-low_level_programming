@@ -4,20 +4,20 @@
 
 
 /**
-* print_rev - prints a string in reverse order
-* @s: string to revers
-* Return: nothing
-*/
+ * print_rev - prints a string in reverse order
+ * @s: string to revers
+ * Return: nothing
+ */
 
 void print_rev(char *s)
 {
-    int len = strlen(s);
+	int len = strlen(s);
 
-    while (len--)
-    {
-        putchar(*(s + len));
-    }
+	while (len--)
+	{
+		putchar(*(s + len));
+	}
 
-    putchar(10);
+	putchar(10);
 }
 

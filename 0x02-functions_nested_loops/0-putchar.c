@@ -1,19 +1,20 @@
-#include "main.h"
+i#include "main.h"
 
 /**
 * main - print put char
 * Return: always 0
 */
 
-int main(void) {
-	char ch[8] = "_putchar";
-	int 1 = 0;
-	char c;
-	while (i<=8) {
-		_putchar(ch[i]);
-		i++;
-	}
-	_putchar('\n');
-	return 0;
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar("\n");
+	return (0);
 }
-

@@ -1,9 +1,9 @@
 #include "function_pointers.h"
 /**
  * array_iterator - a function that iterates over an array
- * @*array - the pointer to the array
- * @size - the size of the array
- * @(*action) - a pointer to the callback function
+ * @array: - the pointer to the array
+ * @size: - the size of the array
+ * @action: - a pointer to the callback function
  *
  * Return: void
  */
